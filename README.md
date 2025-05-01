@@ -1,3 +1,18 @@
+
+  
+```text
+ _______       ___    ___ _______   ________   ________   ________      
+|\  ___ \     |\  \  /  /|\  ___ \ |\   ____\ |\   ____\ |\   ____\     
+\ \   __/|    \ \  \/  / | \   __/|\ \  \___|_\ \  \___|_\ \  \___|_    
+ \ \  \_|/__   \ \    / / \ \  \_|/_\ \_____  \\ \_____  \\ \_____  \   
+  \ \  \_|\ \   \/  /  /   \ \  \_|\ \|____|\  \\|____|\  \\|____|\  \  
+   \ \_______\__/  / /      \ \_______\____\_\  \ ____\_\  \ ____\_\  \ 
+    \|_______|\___/ /        \|_______|\_________\\_________\\_________\
+             \|___|/                  \|_________\|_________\|_________|
+```
+
+
+
 # **EYESSS**
 
 **EYESSS** is a sleek, powerful network analysis tool written in C for Linux systems. It uses system libraries to capture and analyze network traffic, features a simple terminal-based UI, and provides multithreading support for maximum efficiency. It’s the eyes you need on your network, all in one compact tool.
