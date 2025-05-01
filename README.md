@@ -24,6 +24,7 @@
 - **Multithreading Support**: Operates like a pro, using `pthread` for simultaneous tasks—speed and efficiency, all in one.
 - **Unicode Support**: Perfect for multilingual environments. It supports all the characters you’ll need to truly "see" the data.
 - **Secure Execution**: Built with safety in mind using the `-z noexecstack` flag to prevent common stack-based attacks.
+- Security Spy Software
 
 ## Dependencies
 
