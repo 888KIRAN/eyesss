@@ -16,6 +16,7 @@
 #include "errors.h"
 #include "logger.h"
 #include "dos_modes.h"
+#include "arp_spoof.h"
 
 /*-------------------------------*/    
 #define MAX_HISTORY 256
@@ -237,6 +238,25 @@ int terminal_code(int argc, char const *argv[])
                 port_function(command_for_mac);
             }
         }
+        //----------------------------------------------------------------
+        else if (strstr(command, " -Aa\0") != NULL) {
+            char command_for_mac[MAX_COMMAND_LENGTH];
+            strncpy(command_for_mac, command, MAX_COMMAND_LENGTH - 1);
+            command_for_mac[MAX_COMMAND_LENGTH - 1] = '\0';
+        
+            char *value = strstr(command_for_mac, "-Aa");
+            if (value && strlen(value) >= 3) {
+                memmove(value, value + 3, strlen(value + 3) + 1);
+            }
+        
+            char *point = strrchr(command_for_mac, '.');
+            if (point) *point = '\0';
+
+            if (*command_for_mac != '\0') {  // Boş string olmasını engelle
+                port_function_ip(command_for_mac);
+            }
+        }
+        //----------------------------------------------------------------
         else if (strstr(command, "history") != NULL) 
         {
             
